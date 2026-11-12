@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube A-B Loop",
+  "version": "1.0.0",
+  "description": "Loop a specific section of a YouTube video between two points (A and B).",
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}
